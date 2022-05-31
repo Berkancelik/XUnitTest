@@ -13,9 +13,11 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.Single<int>(new List<int>() { 2, 3, 4 });
-            Assert.Single(new List<string>() { "Berkan" });
-,           
+            Assert.IsType<string>("berkan")
+
+
+
+,     
 
         }
     }
