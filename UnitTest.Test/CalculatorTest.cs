@@ -13,10 +13,23 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.Equal<int>(2, 2);
-            Assert.NotEqual<int>(2, 2);
+            var calculator = new Calculator();   
+
+            
 
 
+        }
+
+
+        [Theory]
+        [InlineData(2,5,7)]
+        public void AddTest2(int a, int b, int total)
+        {
+            var calculator = new Calculator();
+
+            var actualTotal = calculator.Add(a, b);
+
+            Assert.Equal(total, actualTotal);
         }
     }
 }
