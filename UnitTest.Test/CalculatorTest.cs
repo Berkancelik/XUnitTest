@@ -13,9 +13,9 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-
-            Assert.InRange(10, 2, 20);
-
+            Assert.Single<int>(new List<int>() { 2, 3, 4 });
+            Assert.Single(new List<string>() { "Berkan" });
+,           
 
         }
     }
