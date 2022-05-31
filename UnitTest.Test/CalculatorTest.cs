@@ -13,8 +13,8 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            string value = null;
-            Assert.Null(value);
+            Assert.Equal<int>(2, 2);
+            Assert.NotEqual<int>(2, 2);
 
 
         }
