@@ -13,7 +13,9 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.Empty(new List<string>() { "Berkan"});
+
+            Assert.InRange(10, 2, 20);
+
 
         }
     }
