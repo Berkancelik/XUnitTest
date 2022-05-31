@@ -13,8 +13,8 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            var regEx = "^dog";
-            Assert.Matches(regEx, "dog fatih");
+            Assert.StartsWith("Bir", "Bir masal");
+            Assert.EndsWith("masal, "Bir masal");
 
         }
     }
