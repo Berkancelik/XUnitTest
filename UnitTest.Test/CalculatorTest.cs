@@ -13,8 +13,7 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.StartsWith("Bir", "Bir masal");
-            Assert.EndsWith("masal, "Bir masal");
+            Assert.Empty(new List<string>() { "Berkan"});
 
         }
     }
