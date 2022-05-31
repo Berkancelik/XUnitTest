@@ -11,7 +11,6 @@ namespace UnitTest.Test
 
     public class CalculatorTest
     {
-        //best practics açısından uygun olanı budur.
         public Calculator calculator { get; set; }
 
         public CalculatorTest(Calculator calculator)
@@ -34,7 +33,7 @@ namespace UnitTest.Test
 
         [Theory]
         [InlineData(2,5,7)]
-        public void AddTest2(int a, int b, int total)
+        public void Add_simpeValues_ReturnValue(int a, int b, int total)
         {
 
             var actualTotal = calculator.Add(a, b);
