@@ -13,11 +13,10 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.IsType<string>("berkan")
+            Assert.IsAssignableFrom<IEnumerable<string>>(new List<string>());
 
+            Assert.IsAssignableFrom<Object>(2);
 
-
-,     
 
         }
     }
