@@ -8,18 +8,13 @@ using Xunit;
 
 namespace UnitTest.Test
 {
-    public  class CalculatorTest
+    public class CalculatorTest
     {
         [Fact]
         public void AddTest()
         {
-            Assert.True(5 > 20);
-            Assert.True(5 > 2);
-            Assert.False(5 > 20);
-
-
-
-            Assert.True("".GetType()==typeof(string));
+            var regEx = "^dog";
+            Assert.Matches(regEx, "dog fatih");
 
         }
     }
