@@ -13,9 +13,8 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            Assert.IsAssignableFrom<IEnumerable<string>>(new List<string>());
-
-            Assert.IsAssignableFrom<Object>(2);
+            string value = null;
+            Assert.Null(value);
 
 
         }
