@@ -8,12 +8,23 @@ using Xunit;
 
 namespace UnitTest.Test
 {
+
     public class CalculatorTest
     {
+        //best practics açısından uygun olanı budur.
+        public Calculator calculator { get; set; }
+
+        public CalculatorTest(Calculator calculator)
+        {
+            this.calculator = calculator;
+        }
+
+
+
         [Fact]
         public void AddTest()
         {
-            var calculator = new Calculator();   
+            var calculator1 = new Calculator();   
 
             
 
@@ -25,7 +36,6 @@ namespace UnitTest.Test
         [InlineData(2,5,7)]
         public void AddTest2(int a, int b, int total)
         {
-            var calculator = new Calculator();
 
             var actualTotal = calculator.Add(a, b);
 
