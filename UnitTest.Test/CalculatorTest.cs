@@ -60,5 +60,22 @@ namespace UnitTest.Test
 
 
         }
+
+
+
+
+
+        [Theory]
+        [InlineData(0, 5)]
+        public void Multip_ZeroeValues_ReturnsMultipValue(int a, int b)
+        {
+            mymock.Setup(x => x.multip(a, b)).Throws(new Exception("a=0 olamaz"));
+
+            Exception exception = Assert.Throws<Exception>(() => calculator.multip(a, b));
+            Assert.Equal("a=0 olamaz", exception.Message);
+
+
+        }
+
     }
 }
