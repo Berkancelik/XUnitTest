@@ -23,7 +23,7 @@ namespace UnitTest.Test
         [Fact]
         public void AddTest()
         {
-            var calculator1 = new Calculator();   
+            //var calculator1 = new Calculator();   
 
             
 
