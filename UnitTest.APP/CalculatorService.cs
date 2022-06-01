@@ -16,5 +16,10 @@ namespace UnitTest.APP
             }
             return a + b;
         }
+
+        public int multip(int a, int b)
+        {
+            return a * b;
+        }
     }
 }
