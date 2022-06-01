@@ -45,6 +45,8 @@ namespace UnitTest.Test
             var actualTotal = calculator.Add(a, b);
 
             Assert.Equal(total, actualTotal);
+
+            mymock.Verify(x => x.add(a, b), Times.AtLeast(2));
         }
 
 
